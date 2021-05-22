@@ -1,4 +1,4 @@
-#[2.1 Hello, world!](https://ko.javascript.info/hello-world)
+# [2.1 Hello, world!](https://ko.javascript.info/hello-world)
 
 * 웹페이지에 자바스크립트 코드를 추가하기위해 `<script>`태그를 사용한다.
 * type과 language 속성은 필수가 아니다.
