@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //생성자함수
+        //함수이름의 첫글자는 대문자, new 연산자를 붙여실행
+        function User(name){
+            //1. 빈객체를 만들어 this에 할당한다
+            // this = {}
+
+            // 2.새로운 프로퍼티를 this에 추가한다.
+            this.name = name;
+            this.isAdmin = false;
+
+            //3. return this;(this가 암시적으로 반환됨)//생성자함수엔 보통 return 문이없는데
+            // 반환해야할것들은 모두 this에 저장되고 자동반환되기때문
+        }
+
+        //new User(...)가 실행되면? 1,2,3
+        let user = new User("Jack")
+        // let user = {
+        //     name:"Jack",
+        //     isAdmin:false
+        // }
+        alert(user.name)//Jack
+        alert(user.isAdmin)//false
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

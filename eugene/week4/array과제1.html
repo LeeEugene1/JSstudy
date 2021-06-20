@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //border-left-width를 borderLeftWidth로 변경하기
+        function camelize(word){
+            let newArray = word.split('-')
+            // console.log(newArray) // ['background', 'color']
+            // 기존 첫번째애를 날려버려:slice(0)
+            for(let i = 1; i<newArray.length; i++){
+                newArray[i] = newArray[i].charAt(0).toUpperCase() + newArray[i].slice(1)
+            }
+            return console.log(newArray.join(""))
+        }
+        camelize("background-color")
+        camelize("border-left-width")
+
+    </script>
+</head>
+
+<body>
+    
+</body>
+</html>

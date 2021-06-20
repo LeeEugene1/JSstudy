@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 배열 복사본을 정렬하기(단, 기존배열을 해치지않는다)
+        let arr = ["HTML", "JavaScript", "CSS"];
+        function copySorted(a){
+            a.slice().sort()
+        }
+        let sorted = copySorted(arr);
+        alert(sorted)// CSS, HTML, JavaScript
+        alert(arr)//no changes
+    </script>
+</head>
+
+<body>
+    
+</body>
+</html>
