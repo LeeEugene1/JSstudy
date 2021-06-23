@@ -55,7 +55,7 @@ let str = 'Widget width id'
 str.indexOf('Widget') // 0
 str.indexOf('widget') // -1 없어서
 str.indexOf('id') // 1; Wid~
-str.indexOf('id', 2) // 2번째 id의 index는? 12
+str.indexOf('id', 2) // 2번째 id의 index는? 8
 
 // 사용법
 if (str.indexOf("Widget") != -1) {
@@ -64,7 +64,7 @@ if (str.indexOf("Widget") != -1) {
 
 str.includes("Widget")//true
 str.includes("bye")//false
-str.includes("id", 3) //3번째 위치에 id가없으므로 false
+str.includes("id", 3) //3번째 위치에 id가있으므로 true
 
 str.startsWith('Wid')//true
 str.endsWith('id')//true
